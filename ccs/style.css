@@ -252,7 +252,7 @@ button:hover {
 }
 
 /*MediaQ*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 975px) {
   .desktop-nav {
     display: none;
   }
