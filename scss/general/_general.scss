@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+$font: "Kanit", sans-serif;
+
+$azul: #6096b4;
+$celeste: #93bfcf;
+$gris: #bdcdd6;
+$beige: #eee9da;
+$blanco: #ffff;
+
+/*general body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  background-color: #eee9da;
+}
+
+/*banner*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+  .banner-nike {
+    height: 80px;
+    background-color: #eee9da;
+    background-image: url(../images/swoosh.png);
+    background-size: contain;
+  }
+
+/*Footer*/
+footer img {
+  width: 50px;
+  padding: 0 3px;
+}
+
+footer {
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdcdd6;
+  color: black;
+  padding: 20px;
+}
+.description {
+  max-width: 50%;
+}
+
+.description p {
+  text-align: justify;
+}
+
+.linksfooter {
+  font-weight: bold;
+}
+
+/*Product grids*/
+
+.product-grid {
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 90vw;
+  }
+  
+  .grid-item {
+    grid-template-rows: 3fr 1fr 2fr 1fr;
+    display: grid;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    max-height: 410px;
+  }
+
+  .imgcontent {
+    width: 200px;
+  }
+  
+  .imgcontent img {
+    object-fit: cover;
+  }
+  
+  .imgcontent img:hover {
+    object-fit: contain;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .item-title {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  button {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background-color: #6096b4;
+    color: #eee9da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+  }
+  
+  button:hover {
+    background-color: #bdcdd6;
+  }
+
+  
+
+// mixin
+
+@mixin flex($direction, $justify, $aling) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aling;
+}
